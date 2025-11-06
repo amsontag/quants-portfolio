@@ -3,6 +3,22 @@ quants-portfolio
 
 Repository to manage Quantitative Research and Data Science Projects.
 
+Notebooks
+------------
+The MC_pricer_validation.ipynb compares different implementations of a Monte Carlo pricer for European options under Geometric Brownian Motion (GBM) by benchmarking Euler-Maruyama and Milstein implementations to analytical, exact solutions of the Black-Scholes equation. It also quantifies weak discretization bias, standard error decay with paths, and variance‐reduction gains using antithetic variates to demonstrate numerical precision and efficiency.
+
+Inputs:
+    - S0:             The starting point of the paths (current asset price).
+    - K:              The Strike price.
+    - r:              The 'percentage drift' constant of the GBM (risk-free interest rate).
+    - sigma:          The 'percentage volatility' constant of the GBM.
+    - T:              The expiry time of the paths -- the maturity time of the asset.
+    - N:              The number of time steps to be simulated.
+    - M:              The number of paths to be simulated.
+    - scheme:         The scheme used to solve the SDE. Default is "euler". Alternative is "milstein".
+
+------------
+
 Project Organization
 ------------
 
